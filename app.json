@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Evermoon Coach",
+    "slug": "evermoon-coach",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "nl.maruverse.coach"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#141312",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "nl.maruverse.coach"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "The coach listens to you sing to check your pitch."
+        }
+      ],
+      "expo-asset"
+    ],
+    "scheme": "evermooncoach",
+    "backgroundColor": "#141312",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
